@@ -30,4 +30,9 @@ public class MessageResource {
         LOG.info("✅ Message successfully sent to topic2");
         return Response.ok("Message sent to topic2").build();
     }
+    //a custom class to add a feature that when post a manually someting on topic2 it should also give logs
+    //curl -X POST http://localhost:8080/message
+    // -H "Content-Type: application/json"
+    // -d '{"name": "Test User", "status": "external-post"}'
+
 }
